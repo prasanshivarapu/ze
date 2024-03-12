@@ -134,26 +134,8 @@ function Footer() {
                         Cross, Dollars Colony, Opp. Clarence Public School, J.P
                         Nagar 4th Phase, Bengaluru - 560078, Karnataka, India.
                         For any complaints pertaining to securities broking
-                        please write to{" "}
-                        <a href="cdn-cgi/l/email-protection.html#bad9d5d7cad6dbd3d4cec9fac0dfc8d5ded2db94d9d5d7">
-                            <span
-                                className="__cf_email__"
-                                data-cfemail="6605090b160a070f081215261c031409020e074805090b"
-                            >
-                                [email protected]
-                            </span>
-                        </a>
-                        , for DP related to{" "}
-                        <a href="cdn-cgi/l/email-protection.html#9efaeedee4fbecf1faf6ffb0fdf1f3">
-                            <span
-                                className="__cf_email__"
-                                data-cfemail="365246764c534459525e571855595b"
-                            >
-                                [email protected]
-                            </span>
-                        </a>
-                        . Please ensure you carefully read the Risk Disclosure
-                        Document as prescribed by SEBI | ICF
+                        please write to . Please ensure you carefully read the
+                        Risk Disclosure Document as prescribed by SEBI | ICF
                     </p>
                     <p>
                         Procedure to file a complaint on{" "}
@@ -205,10 +187,7 @@ function Footer() {
                         stock tips, and have not authorized anyone to trade on
                         behalf of others. If you find anyone claiming to be part
                         of Zerodha and offering such services, please{" "}
-                        <a href="/support.zerodha.com/category/your-zerodha-account/your-profile/articles/how-do-i-place-a-complaint-at-zerodha">
-                            create a ticket here
-                        </a>
-                        .
+                        <a href="/">create a ticket here</a>.
                     </p>
                 </Row>
                 <div className="footer-graveyard-links text-center">

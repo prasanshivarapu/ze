@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
-
+import { GoArrowRight } from "react-icons/go";
 const Homepage = () => {
     return (
-        <div className="homepage">
+        <div className="homepage mb-5">
             {/* Invest in everything */}
             <section className="text-center landing">
                 <Container>
@@ -70,12 +70,14 @@ const Homepage = () => {
                 </Container>
             </section>
 
-            {/* <section>
+            <section>
                 <Container>
                     <Row className="">
                         <Col md={5}>
-                            <h2>Trust with confidence</h2>
-                            <div className="">
+                            <h2 className="heading mb-5">
+                                Trust with confidence
+                            </h2>
+                            <div className="heading">
                                 <h4>Customer-first always</h4>
                                 <p>
                                     That's why 1.3+ crore customers trust
@@ -83,7 +85,7 @@ const Homepage = () => {
                                     equity investments.
                                 </p>
                             </div>
-                            <div className="">
+                            <div className="heading">
                                 <h4>No spam or gimmicks</h4>
                                 <p>
                                     No gimmicks, spam, "gamification", or
@@ -92,7 +94,7 @@ const Homepage = () => {
                                     like.
                                 </p>
                             </div>
-                            <div className="why-us-section">
+                            <div className="heading">
                                 <h4>The Zerodha universe</h4>
                                 <p>
                                     Not just an app, but a whole ecosystem. Our
@@ -101,21 +103,15 @@ const Homepage = () => {
                                     needs.
                                 </p>
                             </div>
-                            <div className="why-us-section">
+                            <div className="heading">
                                 <h4>Do better with money</h4>
                                 <p>
                                     With initiatives like{" "}
-                                    <a
-                                        href="https://support.zerodha.com/category/trading-and-markets/kite-features/nudges/articles/what-is-nudge"
-                                        target="_blank"
-                                    >
+                                    <a href="/" target="_blank">
                                         Nudge
                                     </a>{" "}
                                     and{" "}
-                                    <a
-                                        href="https://support.zerodha.com/category/console/profile/killswitch/articles/what-is-the-kill-switch"
-                                        target="_blank"
-                                    >
+                                    <a href="/" target="_blank">
                                         Kill Switch
                                     </a>
                                     , we don't just facilitate transactions, but
@@ -125,46 +121,44 @@ const Homepage = () => {
                         </Col>
                         <Col md={7}>
                             <div className="text-center">
-                                <a href="products.html">
+                                <a href="/">
                                     <img
                                         src="./images/ecosystem.png"
                                         alt="The Zerodha Universe"
-                                        className="ecosystem-image"
+                                        className="ecosystem-image img-fluid"
                                     />
                                 </a>
                             </div>
-                            <p className="text-center">
-                                <a href="products.html">
+                            <p className="text-center m-3 mb-5">
+                                <a className="arro" href="/">
                                     Explore our products
-                                    <i className="icon-arrow-right"></i>
+                                    <span className="">
+                                        <GoArrowRight />
+                                    </span>
                                 </a>
-                                <a
-                                    className="demo-link"
-                                    href="https://kite-demo.zerodha.com"
-                                >
-                                    Try Kite demo{" "}
-                                    <i className="icon-arrow-right"></i>
+
+                                <a className="demo-link" href="/">
+                                    Try Kite demo <GoArrowRight />
                                 </a>
                             </p>
                         </Col>
                     </Row>
                 </Container>
             </section>
-          */}
+
             <section className="">
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <h2 className="heading">Unbeatable pricing</h2>
-                            <p className="subheading">
+                            <h2 className="heading mb-5">Unbeatable pricing</h2>
+                            <p className="subheading mb-4">
                                 We pioneered the concept of discount broking and
                                 price transparency in India. Flat fees and no
                                 hidden charges.
                             </p>
                             <p>
-                                <a href="pricing.html">
-                                    See pricing{" "}
-                                    <i className="icon-arrow-right"></i>
+                                <a href="/">
+                                    See pricing <GoArrowRight />
                                 </a>
                             </p>
                         </Col>
@@ -229,6 +223,23 @@ const Homepage = () => {
                             </a>
                         </Col>
                     </Row>
+                </Container>
+            </section>
+            <section className="">
+                <Container>
+                    <div className="text-center mt-5 mb-5 heading">
+                        <h2>Open a Account</h2>
+                        <p className="text-grey text-med">
+                            Modern platforms and apps, ₹0 investments, and flat
+                            ₹20 intraday and F&amp;O trades.
+                        </p>
+                        <Button
+                            href="open-account/index.html"
+                            className="button"
+                        >
+                            Sign up now
+                        </Button>
+                    </div>
                 </Container>
             </section>
         </div>
