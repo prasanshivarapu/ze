@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 const Homepage = () => {
     return (
         <div className="homepage mb-5">
             {/* Invest in everything */}
-            <section className="text-center landing">
+            <section className="text-center landing mb-5">
                 <Container>
                     <Row className="justify-content-md-center">
                         <div className="text-center mt-3">
@@ -24,9 +25,14 @@ const Homepage = () => {
                         Online platform to invest in stocks, derivatives, mutual
                         funds, and more
                     </h5>
-                    <Button className="m-3 mb-5" href="/">
-                        Sign up now
-                    </Button>
+                    <Link to="/signup">
+                        <Button
+                            href="open-account/index.html"
+                            className="button"
+                        >
+                            Sign up now
+                        </Button>
+                    </Link>
                 </Container>
             </section>
 
@@ -233,12 +239,14 @@ const Homepage = () => {
                             Modern platforms and apps, ₹0 investments, and flat
                             ₹20 intraday and F&amp;O trades.
                         </p>
-                        <Button
-                            href="open-account/index.html"
-                            className="button"
-                        >
-                            Sign up now
-                        </Button>
+                        <Link to="/signup">
+                            <Button
+                                href="open-account/index.html"
+                                className="button"
+                            >
+                                Sign up now
+                            </Button>
+                        </Link>
                     </div>
                 </Container>
             </section>

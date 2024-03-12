@@ -18,7 +18,7 @@ function NavbarComp() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav nam" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="nam">
                     <Nav className="nam">
-                        <Nav.Link className="nav-links" href="#features">
+                        <Nav.Link className="nav-links " href="#features">
                             Signup
                         </Nav.Link>
                         <Nav.Link href="#features">About</Nav.Link>

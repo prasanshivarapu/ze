@@ -46,6 +46,40 @@
 .arro {
     margin-right: 20px;
 }
+/* .account-open-sections {
+    position: absolute;
+    border-radius: 2px;
+    padding: 6px 10px 5px 8px;
+    top: 1px;
+    left: 1px;
+    color: #424242;
+
+    font-size: 1.2em;
+} */
+.input-group {
+    display: flex;
+    align-items: stretch; /* Align items to stretch to the same height */
+    width: 100%;
+}
+
+.input-group-prepend,
+.input-group-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px !important; /* Set width to 50px */
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.centerMobile {
+    width: 350px !important;
+}
+.form-control.input1 {
+    flex-grow: 1; /* Allow the input field to grow to fill the remaining space */
+    width: calc(100% - 50px); /* Calculate width to fill remaining space */
+}
+
 @media (max-width: 768px) {
     .nam {
         display: flex;
