@@ -30,12 +30,12 @@ const Homepage = () => {
                 </Container>
             </section>
 
-            <section className="marketing">
+            <section className="marketing mb-5">
                 <Container>
                     <Row className="between v-align">
                         <Col md={5} className="text-center">
                             <img
-                                className="landing-image"
+                                className="limage"
                                 src="./images/larger.png"
                                 alt=""
                             />
@@ -125,7 +125,7 @@ const Homepage = () => {
                         </Col>
                         <Col md={7}>
                             <div className="text-center">
-                                <a href="products/">
+                                <a href="products.html">
                                     <img
                                         src="./images/ecosystem.png"
                                         alt="The Zerodha Universe"
@@ -134,7 +134,7 @@ const Homepage = () => {
                                 </a>
                             </div>
                             <p className="text-center">
-                                <a href="products/">
+                                <a href="products.html">
                                     Explore our products
                                     <i className="icon-arrow-right"></i>
                                 </a>
@@ -162,7 +162,7 @@ const Homepage = () => {
                                 hidden charges.
                             </p>
                             <p>
-                                <a href="pricing/">
+                                <a href="pricing.html">
                                     See pricing{" "}
                                     <i className="icon-arrow-right"></i>
                                 </a>
@@ -200,7 +200,7 @@ const Homepage = () => {
                         <Col md={5} className="text-center">
                             <a href="/">
                                 <img
-                                    className="img-margin"
+                                    className="eimage"
                                     src="./images/erodha.png"
                                     alt="ima"
                                 />

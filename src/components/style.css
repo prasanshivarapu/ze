@@ -11,6 +11,13 @@
 .landing-image {
     margin-bottom: 60px;
     max-height: 45vh;
+    width: 300px;
+}
+.limage {
+    width: 300px;
+}
+.eimage {
+    width: 250px;
 }
 .heading {
     color: #424242;
@@ -167,5 +174,16 @@ footer .copyright {
     .main-footer .column:last-child,
     .main-footer .columns:last-child {
         margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 756px) {
+    .landing-image {
+        width: 650px;
+    }
+    .limage {
+        width: 350px;
+    }
+    .eimage {
+        width: 350px;
     }
 }
