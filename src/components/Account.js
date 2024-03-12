@@ -1,9 +1,17 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./style.css";
+import { useState } from "react";
 
 const AccountOpenSection = () => {
+    const [a, b] = useState("");
     const handleSubmit = (event) => {
         event.preventDefault();
+
+        alert(`You have entered ${a}`);
+        b("");
+    };
+    const inputNumber = (event) => {
+        b(event.target.value);
     };
 
     return (
@@ -43,6 +51,8 @@ const AccountOpenSection = () => {
                                     </span>
                                     <input
                                         type="tel"
+                                        value={a}
+                                        onChange={inputNumber}
                                         className="form-control input1"
                                         required
                                     />
