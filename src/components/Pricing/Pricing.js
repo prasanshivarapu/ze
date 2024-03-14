@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./pricing.css";
+import { Link } from "react-router-dom";
 function Pricing() {
     return (
         <div>
@@ -53,7 +54,14 @@ function Pricing() {
                             ₹20 intraday and F&amp;O trades.
                         </p>
 
-                        <Button> Sign up now</Button>
+                        <Link to="/signup">
+                            <Button
+                                href="open-account/index.html"
+                                className="button"
+                            >
+                                Sign up now
+                            </Button>
+                        </Link>
                     </div>
                 </Container>
             </section>
