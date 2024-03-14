@@ -17,7 +17,7 @@ function App() {
 
                     <Route path="/signup" element={<AccountOpenSection />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/1" element={<Pricing />} />
+                    <Route path="/pricing" element={<Pricing />} />
                 </Routes>
                 <Footer />
             </div>
