@@ -1,0 +1,36 @@
+body {
+    width: 100%;
+}
+.fimage {
+    height: 290px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+}
+.ffimage {
+    width: 60%;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 756px) {
+    .fimage {
+        height: 250px;
+    }
+    .ffimage {
+        height: 200px;
+    }
+}
+.but {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: none;
+}
+.intro {
+}
+.intro1 {
+    max-width: 1200px;
+}
+.mainz {
+    width: 100%;
+}

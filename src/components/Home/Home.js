@@ -6,7 +6,6 @@ import "./home.css";
 const Homepage = () => {
     return (
         <div className="homepage mb-5">
-            {/* Invest in everything */}
             <section className="text-center landing mb-5">
                 <Container>
                     <Row className="justify-content-md-center">
@@ -171,19 +170,19 @@ const Homepage = () => {
                         </Col>
                         <Col md={6}>
                             <div className="pricing mb-5">
-                                <div className="col text-center">
+                                <div className="col ">
                                     <div className="pricing-box">
                                         <h1 className="heading">&#8377;0</h1>
-                                        <p className="subheading">
+                                        <p className="subheading pt-3">
                                             Free equity delivery and direct
                                             mutual funds
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col text-center ">
+                                <div className="col  ">
                                     <div className="pricing-box">
-                                        <h1 className="heading">&#8377;20</h1>
-                                        <p className="heading">
+                                        <h1 className="heading ">&#8377;20</h1>
+                                        <p className="heading pt-3">
                                             Intraday and F&O
                                         </p>
                                     </div>

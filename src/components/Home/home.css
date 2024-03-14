@@ -55,12 +55,13 @@
     padding: 25px;
     box-sizing: border-box;
     min-height: 190px;
+    text-align: center;
+    padding: 20px !important;
 }
 .pricing {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;
 }
 .arro {
     margin-right: 20px;
