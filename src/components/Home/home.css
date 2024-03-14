@@ -52,7 +52,7 @@
 }
 .pricing-box {
     border: 1px solid #ccc;
-    padding: 0 25px;
+    padding: 25px;
     box-sizing: border-box;
     min-height: 190px;
 }

@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "./style.css";
+import "./account.css";
 import { useState } from "react";
 
 const AccountOpenSection = () => {

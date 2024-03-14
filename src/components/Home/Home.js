@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-router-dom";
+import "./home.css";
 const Homepage = () => {
     return (
         <div className="homepage mb-5">
@@ -179,7 +180,7 @@ const Homepage = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col text-center">
+                                <div className="col text-center ">
                                     <div className="pricing-box">
                                         <h1 className="heading">&#8377;20</h1>
                                         <p className="heading">
@@ -193,7 +194,6 @@ const Homepage = () => {
                 </Container>
             </section>
 
-            {/* open free education */}
             <section>
                 <Container>
                     <Row className="">
@@ -237,7 +237,7 @@ const Homepage = () => {
                         <h2>Open a Account</h2>
                         <p className="text-grey text-med">
                             Modern platforms and apps, ₹0 investments, and flat
-                            ₹20 intraday and F&amp;O trades.
+                            ₹20 intraday and F&O trades.
                         </p>
                         <Link to="/signup">
                             <Button
