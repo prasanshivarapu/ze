@@ -45,7 +45,7 @@ function NavbarComp() {
                             Signup
                         </Nav.Link>
                         <Nav.Link href="/about">About</Nav.Link>
-                        <Nav.Link href="#features">Products</Nav.Link>
+                        <Nav.Link href="/product">Products</Nav.Link>
                         <Nav.Link href="/pricing">Pricing</Nav.Link>
                         <Nav.Link href="#features">Support</Nav.Link>
                     </Nav>
