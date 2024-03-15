@@ -55,10 +55,7 @@ function Pricing() {
                         </p>
 
                         <Link to="/signup">
-                            <Button
-                                href="open-account/index.html"
-                                className="button"
-                            >
+                            <Button href="/" className="button">
                                 Sign up now
                             </Button>
                         </Link>
@@ -71,9 +68,7 @@ function Pricing() {
                         <Row className="justify-content-center mb-5">
                             <Col md={4} className="text-center">
                                 <h5 className="mt-3 mb-5">
-                                    <a href="../brokerage-calculator.html">
-                                        Brokerage calculator
-                                    </a>
+                                    <a href="/">Brokerage calculator</a>
                                 </h5>
                             </Col>
                             <Col md={4} className="text-center">

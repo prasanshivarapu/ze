@@ -41,7 +41,7 @@ function NavbarComp() {
                             gap: "2vw",
                         }}
                     >
-                        <Nav.Link className="nav-links " href="#features">
+                        <Nav.Link className="nav-links " href="./signup">
                             Signup
                         </Nav.Link>
                         <Nav.Link href="/about">About</Nav.Link>
