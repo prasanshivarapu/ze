@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import "./product.css";
+import { Link } from "react-router-dom";
 function Product() {
     return (
         <div>
-            <section className=" text-center border-bottom">
-                <Container>
+            <section className=" text-center border-bottom mainP1 ">
+                <Container className="mainP1 ">
                     <h1>Technology</h1>
                     <h5>Sleek, modern, and intuitive trading platforms</h5>
                     <p>
@@ -16,8 +17,8 @@ function Product() {
                     </p>
                 </Container>
             </section>
-            <section className="" id="kite">
-                <Container>
+            <section className="">
+                <Container className="mainP1 ">
                     <Row className="justify-content-between align-items-center">
                         <Col md={7} className="text-center">
                             <a href="/">
@@ -52,7 +53,7 @@ function Product() {
                     </Row>
                 </Container>
             </section>
-            <section className="">
+            <section className="mainP1">
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col md={4} className="">
@@ -75,7 +76,7 @@ function Product() {
                     </Row>
                 </Container>
             </section>
-            <section className="" id="coin">
+            <section className="mainP1" id="coin">
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col md={7} className="text-center">
@@ -104,7 +105,7 @@ function Product() {
                     </Row>
                 </Container>
             </section>
-            <section className="">
+            <section className="mainP1">
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col md={4} className="">
@@ -131,7 +132,7 @@ function Product() {
                     </Row>
                 </Container>
             </section>
-            <section className="" id="varsity">
+            <section className="mainP1" id="varsity">
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col md={7} className="text-center">
@@ -162,7 +163,7 @@ function Product() {
                     </Row>
                 </Container>
             </section>
-            <section className="" id="coin">
+            <section className="mainP1">
                 <Container>
                     <p className="text-center mt-5 mb-5">
                         Want to know more about our technology stack? Check out
@@ -170,7 +171,7 @@ function Product() {
                     </p>
                 </Container>
             </section>
-            <section className="">
+            <section className="mainP1">
                 <Container className="center">
                     <h2 className="text-center mt-5 mb-5">
                         The Zerodha Universe
@@ -187,7 +188,7 @@ function Product() {
                                     className="logo"
                                 />
                                 <br />
-                                <span className="text-12 text-light-grey">
+                                <span className="textColor">
                                     Thematic investment platform
                                 </span>
                             </a>
@@ -199,16 +200,20 @@ function Product() {
                                     className="logo"
                                 />
                                 <br />
-                                <span className="text-12 text-light-grey">
+                                <span className="textColor">
                                     Algo & strategy platform
                                 </span>
                             </a>
                         </Col>
                         <Col className="text-center" xs={12} md={4}>
                             <a href="/" target="_blank">
-                                <Image src="./images/sc.png" className="logo" />
+                                <Image
+                                    src="./images/sc1.png"
+                                    className="logo"
+                                />
+
                                 <br />
-                                <span className="text-12 text-light-grey sensibull-desc">
+                                <span className="textColor  ">
                                     Options trading platform
                                 </span>
                             </a>
@@ -222,7 +227,7 @@ function Product() {
                                     className="logo"
                                 />
                                 <br />
-                                <span className="text-12 text-light-grey">
+                                <span className="textColor">
                                     Asset management
                                 </span>
                             </a>
@@ -234,7 +239,7 @@ function Product() {
                                     className="logo"
                                 />
                                 <br />
-                                <span className="text-12 text-light-grey">
+                                <span className="textColor">
                                     Bonds trading platform
                                 </span>
                             </a>
@@ -246,10 +251,21 @@ function Product() {
                                     className="logo"
                                 />
                                 <br />
-                                <span className="text-12 text-light-grey">
-                                    Insurance
-                                </span>
+                                <span className="textColor">Insurance</span>
                             </a>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section>
+                <Container className="mainP1">
+                    <Row>
+                        <Col className="text-center">
+                            <Link to="/signup">
+                                <Button href="/signup" className="button">
+                                    Sign up now
+                                </Button>
+                            </Link>
                         </Col>
                     </Row>
                 </Container>

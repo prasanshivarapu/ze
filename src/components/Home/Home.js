@@ -26,10 +26,7 @@ const Homepage = () => {
                         funds, and more
                     </h5>
                     <Link to="/signup">
-                        <Button
-                            href="open-account/index.html"
-                            className="button"
-                        >
+                        <Button href="/signup" className="button">
                             Sign up now
                         </Button>
                     </Link>

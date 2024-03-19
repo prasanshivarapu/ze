@@ -7,6 +7,7 @@ import AccountOpenSection from "./components/Account/Account";
 import About from "./components/About/About";
 import Pricing from "./components/Pricing/Pricing";
 import Product from "./components/Products/Product";
+import Support from "./components/Support/Support";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/product" element={<Product />} />
+                    <Route path="/1" element={<Support />} />
                 </Routes>
                 <Footer />
             </div>

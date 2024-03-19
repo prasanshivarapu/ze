@@ -2,3 +2,15 @@
     width: 200px;
     margin-top: 20px;
 }
+.textColor {
+    color: gray;
+    text-decoration: none !important;
+}
+a {
+    text-decoration: none;
+}
+
+.mainP1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
