@@ -8,9 +8,7 @@ import About from "./components/About/About";
 import Pricing from "./components/Pricing/Pricing";
 import Product from "./components/Products/Product";
 import Support from "./components/Support/Support";
-import Dashboard from "./components/Dashboard/Dashboard";
 import Dashboard1 from "./components/Dashboard1/Dashboard1";
-import Dashboard55 from "./components/Support5";
 
 function App() {
     return (

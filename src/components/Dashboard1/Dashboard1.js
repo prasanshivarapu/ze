@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./dashboard1.css";
 import { Col, Container, Row } from "react-bootstrap";
 
 function Dashboard1() {
+    useEffect(() => {
+        const fetchingData = async () => {
+            const data = await fetch("http://localhost:5001/financial-data");
+            const res = await data.json();
+            console.log(res);
+        };
+        fetchingData();
+    }, []);
     return (
         <section style={{ backgroundColor: "transparent" }}>
             <Container fluid>
