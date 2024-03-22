@@ -8,22 +8,28 @@ import About from "./components/About/About";
 import Pricing from "./components/Pricing/Pricing";
 import Product from "./components/Products/Product";
 import Support from "./components/Support/Support";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Dashboard1 from "./components/Dashboard1/Dashboard1";
+import Dashboard55 from "./components/Support5";
 
 function App() {
     return (
         <Router>
             <div>
-                <NavbarComp />
+                {/* <NavbarComp /> */}
                 <Routes>
                     <Route path="/" element={<Homepage />} />
 
-                    <Route path="/signup" element={<AccountOpenSection />} />
+                    {/* <Route path="/signup" element={<AccountOpenSection />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/product" element={<Product />} />
                     <Route path="/1" element={<Support />} />
+                    <Route path="/2" element={<Investiment />} /> */}
+                    {/* <Route path="/3" element={<Dashboard />} /> */}
+                    <Route path="/3" element={<Dashboard1 />} />
                 </Routes>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </Router>
     );
