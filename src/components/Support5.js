@@ -9,10 +9,7 @@ function Dashboard55() {
                     <div className="wrapper">
                         <div className="header-right">
                             <a href="/" className="logo">
-                                <img
-                                    src="/static/images/kite-logo.svg"
-                                    alt="Kite logo"
-                                />
+                                <span>logo</span>
                             </a>
                             <div className="current-nav">Dashboard</div>
                             <div className="right-nav">

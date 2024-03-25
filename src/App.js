@@ -9,6 +9,7 @@ import Pricing from "./components/Pricing/Pricing";
 import Product from "./components/Products/Product";
 import Support from "./components/Support/Support";
 import Dashboard1 from "./components/Dashboard1/Dashboard1";
+import Dashboard55 from "./components/Support5";
 
 function App() {
     return (
@@ -25,7 +26,7 @@ function App() {
                     <Route path="/1" element={<Support />} />
                     <Route path="/2" element={<Investiment />} /> */}
                     {/* <Route path="/3" element={<Dashboard />} /> */}
-                    <Route path="/3" element={<Dashboard1 />} />
+                    <Route path="/3" element={<Dashboard55 />} />
                 </Routes>
                 {/* <Footer /> */}
             </div>

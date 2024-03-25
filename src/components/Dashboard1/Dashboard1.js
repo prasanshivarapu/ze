@@ -7,7 +7,7 @@ function Dashboard1() {
         const fetchingData = async () => {
             const data = await fetch("http://localhost:5001/financial-data");
             const res = await data.json();
-            console.log(res);
+            console.log(res.NIFTY3);
         };
         fetchingData();
     }, []);
@@ -15,13 +15,15 @@ function Dashboard1() {
         <section style={{ backgroundColor: "transparent" }}>
             <Container fluid>
                 <Row>
-                    <Col md={4} className="d-flex  ide">
-                        <div className="inner text-center">
-                            <p className="inner1">NIFTY 2024</p>
-                            <p className="inner1">SENSEX 2024</p>
+                    <Col sm={4} className="d-flex  ide">
+                        <div>
+                            <div className="inner text-center">
+                                <p className="inner1">NIFTY 2024</p>
+                                <p className="inner1">SENSEX 2024</p>
+                            </div>
                         </div>
                     </Col>
-                    <Col md={8} className="">
+                    <Col sm={8} className="">
                         <h1>inner dashboard</h1>
                     </Col>
                 </Row>
