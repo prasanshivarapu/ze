@@ -8,30 +8,29 @@ import About from "./components/About/About";
 import Pricing from "./components/Pricing/Pricing";
 import Product from "./components/Products/Product";
 import Support from "./components/Support/Support";
-import Dashboard1 from "./components/Dashboard1/Dashboard1";
-import Dashboard55 from "./components/Support5";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
-    return (
-        <Router>
-            <div>
-                {/* <NavbarComp /> */}
-                <Routes>
-                    <Route path="/" element={<Homepage />} />
+  return (
+    <Router>
+      <div>
+        <NavbarComp />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
 
-                    {/* <Route path="/signup" element={<AccountOpenSection />} />
+          {/* <Route path="/signup" element={<AccountOpenSection />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/product" element={<Product />} />
                     <Route path="/1" element={<Support />} />
                     <Route path="/2" element={<Investiment />} /> */}
-                    {/* <Route path="/3" element={<Dashboard />} /> */}
-                    <Route path="/3" element={<Dashboard55 />} />
-                </Routes>
-                {/* <Footer /> */}
-            </div>
-        </Router>
-    );
+          {/* <Route path="/3" element={<Dashboard />} /> */}
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+        {/* <Footer /> */}
+      </div>
+    </Router>
+  );
 }
 
 export default App;
