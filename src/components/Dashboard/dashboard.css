@@ -1,0 +1,6 @@
+.nav-links {
+  &:hover,
+  &:focus {
+    color: orange !important;
+  }
+}
