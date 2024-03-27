@@ -4,16 +4,33 @@ import { useState } from "react";
 
 const AccountOpenSection = () => {
     const [a, b] = useState("");
+    const [c, d] = useState("");
+    const [isVari, setisVeri] = useState(true);
+    const [isVari1, setisVeri1] = useState(false);
+    const [is, isset] = useState(false);
     const handleSubmit = (event) => {
         event.preventDefault();
-
+        setisVeri(false);
+        setisVeri1(true);
         alert(`You have entered ${a}`);
         b("");
+    };
+    const handleSubmit2 = (event) => {
+        event.preventDefault();
+
+        if (c === "1234") {
+            alert("YOu have entered correct value");
+        }
+        isset(true);
+        setisVeri1(false);
+        d("");
     };
     const inputNumber = (event) => {
         b(event.target.value);
     };
-
+    const inputNumber1 = (event) => {
+        d(event.target.value);
+    };
     return (
         <div>
             <section className="">
@@ -27,7 +44,7 @@ const AccountOpenSection = () => {
                     </h5>
                 </div>
             </section>
-            <section className="account-open-sections acop-landing">
+            <section className="account-open-sections ">
                 <Container>
                     <Row className="justify-content-center align-items-center">
                         <Col md={6} className="account-illus text-center">
@@ -37,106 +54,119 @@ const AccountOpenSection = () => {
                                 className="img-fluid"
                             />
                         </Col>
-                        <Col md={6} className="centerMobile ml-5">
-                            <h2 className="heading mt-2 mb-2">Signup now</h2>
-                            <span className="subheading color-grey mt-2 mb-3">
-                                Or track your existing application
-                            </span>
-                            <form onSubmit={handleSubmit}>
-                                <div className="input-group mb-3 mt-3">
-                                    <span className="input-group-prepend">
-                                        <span className="input-group-text">
-                                            +91
-                                        </span>
-                                    </span>
-                                    <input
-                                        type="tel"
-                                        value={a}
-                                        onChange={inputNumber}
-                                        className="form-control input1"
-                                        required
-                                    />
-                                    <p className="help-text mt-3 subheading color-grey text-12">
-                                        You will receive an OTP on your number
-                                    </p>
-                                </div>
-                                <button
-                                    type="submit"
-                                    className="btn btn-primary"
-                                >
-                                    Submit
-                                </button>
-                                <p className="text-12 mt-2 mb-3">
-                                    <a href="/">Want to open an NRI account?</a>
-                                </p>
-                            </form>
-
-                            {/* <Row>
-                                <Col md={8}>
-                                    <form
-                                        id="open_account_form"
-                                        onSubmit={handleSubmit}
-                                    >
-                                        <Row className="not-around">
-                                            <span className="mobile-prefix">
+                        {isVari && (
+                            <Col md={6} className="centerMobile ml-5">
+                                <h2 className="heading mt-2 mb-2">
+                                    Signup now
+                                </h2>
+                                <span className="subheading color-grey mt-2 mb-3">
+                                    Or track your existing application
+                                </span>
+                                <form onSubmit={handleSubmit}>
+                                    <div className="input-group mb-3 mt-3">
+                                        <span className="input-group-prepend">
+                                            <span className="input-group-text">
                                                 +91
                                             </span>
-                                            <input
-                                                type="number"
-                                                autoFocus
-                                                min="1000000000"
-                                                max="9999999999"
-                                                name="mobile"
-                                                id="user_mobile"
-                                                placeholder="Your 10 digit mobile number"
-                                                required
-                                            />
-                                            <p className="help-text color-grey text-12">
-                                                You will receive an OTP on your
-                                                number
-                                            </p>
-                                            <p className="help-text error-message text-12"></p>
-                                            <input
-                                                type="hidden"
-                                                maxLength="25"
-                                                name="source"
-                                                id="user_source"
-                                                value="zerodha"
-                                                required
-                                            />
-                                            <input
-                                                type="hidden"
-                                                maxLength="25"
-                                                name="partner_id"
-                                                id="user_id"
-                                                value=""
-                                                required
-                                            />
-                                        </Row>
-                                        <div className="open-account-submit-container">
-                                            <Button
-                                                type="submit"
-                                                id="open_account_proceed_form"
-                                                className="register-user"
-                                            >
-                                                Continue
-                                                <div className="pulse-container">
-                                                    <div className="pulse-bubble pulse-bubble-1"></div>
-                                                    <div className="pulse-bubble pulse-bubble-2"></div>
-                                                    <div className="pulse-bubble pulse-bubble-3"></div>
-                                                    <div className="pulse-bubble pulse-bubble-4"></div>
-                                                </div>
-                                            </Button>
-                                        </div>
-                                    </form>
-                                    <p className="text-12">
-                                        <a href="open-account/nri.html">
+                                        </span>
+                                        <input
+                                            type="tel"
+                                            value={a}
+                                            onChange={inputNumber}
+                                            className="form-control input1"
+                                            required
+                                        />
+                                        <p className="help-text mt-3 subheading color-grey text-12">
+                                            You will receive an OTP on your
+                                            number
+                                        </p>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        className="btn btn-primary"
+                                    >
+                                        Submit
+                                    </button>
+                                    <p className="text-12 mt-2 mb-3">
+                                        <a href="/">
                                             Want to open an NRI account?
                                         </a>
                                     </p>
-                                </Col>
-                            </Row> */}
-                        </Col>
+                                </form>
+                            </Col>
+                        )}
+                        {!isVari && isVari1 && (
+                            <Col md={6} className="centerMobile ml-5">
+                                <h2 className="heading mt-2 mb-2">
+                                    Confirm OTP
+                                </h2>
+
+                                <form onSubmit={handleSubmit2}>
+                                    <div className="input-group mb-3 mt-3">
+                                        {/* <span className="input-group-prepend">
+                                            <span className="input-group-text">
+                                                +91
+                                            </span>
+                                        </span> */}
+                                        <input
+                                            type="tel"
+                                            value={c}
+                                            onChange={inputNumber1}
+                                            className="form-control input1"
+                                            required
+                                        />
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        className="btn btn-primary"
+                                    >
+                                        continue
+                                    </button>
+                                    <p className="text-12 mt-2 mb-3">
+                                        <a href="/">
+                                            Want to open an NRI account?
+                                        </a>
+                                    </p>
+                                </form>
+                            </Col>
+                        )}
+                        {!isVari && !isVari1 && is && (
+                            <Col md={6} className="centerMobile ml-5">
+                                <form onSubmit={handleSubmit2}>
+                                    <span className="m-0">pan number</span>
+                                    <div className="input-group mb-3 ">
+                                        {/* <span className="input-group-prepend">
+                                     <span className="input-group-text">
+                                         +91
+                                     </span>
+                                 </span> */}
+                                        <input
+                                            type="tel"
+                                            value={c}
+                                            onChange={inputNumber1}
+                                            className="form-control "
+                                            required
+                                        />
+                                    </div>
+                                    <span className="m-0 ">Dob</span>
+                                    <input
+                                        className="form-control  mb-3"
+                                        type="date"
+                                    />
+                                    <button
+                                        type="submit"
+                                        className="btn btn-primary"
+                                    >
+                                        continue
+                                    </button>
+                                    <p className="text-12 mt-2 mb-3">
+                                        <a href="/">
+                                            Want to open an NRI account?
+                                        </a>
+                                    </p>
+                                </form>
+                            </Col>
+                        )}
                     </Row>
                     <br />
                     <p className="text-grey text-1 text-center">
@@ -152,7 +182,7 @@ const AccountOpenSection = () => {
                         <br />
                         <br /> If you are looking to open a HUF, Corporate,
                         Partnership, or NRI account, you have to use the{" "}
-                        <a target="_blank" href="resources.html">
+                        <a target="_blank" href="/">
                             offline forms.
                         </a>{" "}
                         For help,{" "}

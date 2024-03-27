@@ -1,0 +1,12 @@
+.navIe {
+    /* margin-right: auto; */
+    margin-left: auto;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+.naV {
+    margin-left: 2px;
+    margin-right: 2px;
+}

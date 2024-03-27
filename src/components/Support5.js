@@ -1,37 +1,35 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "./style.css";
+
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+
+import "./style2.css";
 function Dashboard55() {
     return (
         <div className="app-wrapper">
             <div id="app" className="app mobile page-dashboard">
-                <div className="header">
-                    <div className="wrapper">
-                        <div className="header-right">
-                            <a href="/" className="logo">
-                                <span>logo</span>
-                            </a>
-                            <div className="current-nav">Dashboard</div>
-                            <div className="right-nav">
-                                <div className="bulletin-menu">
-                                    <a className="bulletin-widget">
-                                        <span className="icon icon-bell"></span>
-                                    </a>
-                                </div>
-                                <div className="user-nav perspective">
-                                    <a href="" className="dropdown-label">
-                                        <div id="avatar-43">
-                                            <div className="avatar">
-                                                <span>AK</span>
-                                            </div>
-                                        </div>
-                                        <span className="user-id">LTJ473</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Navbar bg="light" expand="lg" className="naV">
+                    <Navbar.Brand href="#home">logo</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav navIe">
+                        <Nav className=" navIe">
+                            <Nav.Link href="#dashboard">Dashboard</Nav.Link>
+                            <Nav.Link href="#dashboard">Orders</Nav.Link>
+                            <Nav.Link href="#dashboard">Holdings</Nav.Link>
+                            <Nav.Link href="#dashboard">Positions</Nav.Link>
+                            <Nav.Link href="#dashboard">Bids</Nav.Link>
+                            <Nav.Link href="#dashboard">Funds</Nav.Link>
+                            <Nav.Link href="#dashboard">Bell</Nav.Link>
+                            <Nav.Link href="#dashboard">3dots</Nav.Link>
+                        </Nav>
+                        <Nav>
+                            <Nav.Link href="#user-profile">
+                                <span>AK</span>
+                                <span className="user-id">LTJ473</span>
+                            </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
                 <Container className="wrapper">
                     <div className="container-right">
                         <div className="page-content dashboard">
