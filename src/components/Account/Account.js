@@ -163,11 +163,7 @@ const AccountOpenSection = () => {
                                         className="form-control  mb-3"
                                         type="date"
                                     />
-                                    <span className="m-0 ">Dob</span>
-                                    <input
-                                        className="form-control  mb-3"
-                                        type="date"
-                                    />
+
                                     <button
                                         type="submit"
                                         className="btn btn-primary"
