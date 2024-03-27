@@ -8,6 +8,8 @@ const AccountOpenSection = () => {
     const [isVari, setisVeri] = useState(true);
     const [isVari1, setisVeri1] = useState(false);
     const [is, isset] = useState(false);
+    const [final, setfinal] = useState(false);
+    const [note, setnote] = useState(false);
     const handleSubmit = (event) => {
         event.preventDefault();
         setisVeri(false);
@@ -20,10 +22,23 @@ const AccountOpenSection = () => {
 
         if (c === "1234") {
             alert("YOu have entered correct value");
+            isset(true);
+            setisVeri1(false);
+            d("");
+        } else {
+            alert("Incorrect otp");
         }
-        isset(true);
+    };
+    const handleSubmit3 = (event) => {
+        event.preventDefault();
+        setisVeri(false);
         setisVeri1(false);
-        d("");
+        isset(false);
+        setfinal(true);
+    };
+    const handleSubmit4 = () => {
+        setfinal(false);
+        setnote(true);
     };
     const inputNumber = (event) => {
         b(event.target.value);
@@ -132,14 +147,9 @@ const AccountOpenSection = () => {
                         )}
                         {!isVari && !isVari1 && is && (
                             <Col md={6} className="centerMobile ml-5">
-                                <form onSubmit={handleSubmit2}>
+                                <form onSubmit={handleSubmit3}>
                                     <span className="m-0">pan number</span>
                                     <div className="input-group mb-3 ">
-                                        {/* <span className="input-group-prepend">
-                                     <span className="input-group-text">
-                                         +91
-                                     </span>
-                                 </span> */}
                                         <input
                                             type="tel"
                                             value={c}
@@ -153,6 +163,11 @@ const AccountOpenSection = () => {
                                         className="form-control  mb-3"
                                         type="date"
                                     />
+                                    <span className="m-0 ">Dob</span>
+                                    <input
+                                        className="form-control  mb-3"
+                                        type="date"
+                                    />
                                     <button
                                         type="submit"
                                         className="btn btn-primary"
@@ -160,11 +175,63 @@ const AccountOpenSection = () => {
                                         continue
                                     </button>
                                     <p className="text-12 mt-2 mb-3">
+                                        {/* <a href="/">
+                                            Want to open an NRI account?
+                                        </a> */}
+                                    </p>
+                                </form>
+                            </Col>
+                        )}
+                        {!isVari && !isVari1 && !is && final && (
+                            <Col md={6} className="centerMobile ml-5">
+                                <form onSubmit={handleSubmit4}>
+                                    <span className="m-0">Aadhar number</span>
+                                    <div className="input-group mb-3 ">
+                                        <input
+                                            type="tel"
+                                            // value={}
+                                            onChange={inputNumber1}
+                                            className="form-control "
+                                            required
+                                        />
+                                    </div>
+                                    <span className="m-0 ">First name</span>
+                                    <input
+                                        className="form-control  mb-3"
+                                        type="text"
+                                    />
+                                    <span className="m-0 ">Last name</span>
+                                    <input
+                                        className="form-control  mb-3"
+                                        type="text"
+                                    />
+                                    <span className="m-0 ">Email</span>
+                                    <input
+                                        className="form-control  mb-3"
+                                        type="mail"
+                                    />
+                                    <button
+                                        type="submit"
+                                        className="btn btn-primary"
+                                    >
+                                        Submit
+                                    </button>
+                                    {/* <p className="text-12 mt-2 mb-3">
                                         <a href="/">
                                             Want to open an NRI account?
                                         </a>
-                                    </p>
+                                    </p> */}
                                 </form>
+                            </Col>
+                        )}
+                        {!isVari && !isVari1 && !is && !final && note && (
+                            <Col md={6} className="centerMobile ml-5">
+                                <div className="outp input1">
+                                    <h3>
+                                        we will get back to you soon via
+                                        email...
+                                    </h3>
+                                </div>
                             </Col>
                         )}
                     </Row>

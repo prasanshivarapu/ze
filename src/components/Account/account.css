@@ -242,3 +242,17 @@ footer .copyright {
         width: 350px;
     }
 }
+.outp {
+    border: solid;
+    border-color: #b2c2d4;
+    border-radius: 18px;
+    padding: 10px;
+    min-height: 250px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input1 {
+}
