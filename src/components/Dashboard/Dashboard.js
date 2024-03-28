@@ -120,7 +120,7 @@ const Dashboard = () => {
             <h3 style={{ marginLeft: "-3vw" }}>Commodity</h3>
           </div>
           <Row>
-            <Col md={3}>
+            <Col md={3} style={{ borderRight: "2px solid black" }}>
               <h1>0</h1>
               <h5>Margin availbel</h5>
             </Col>
@@ -130,6 +130,7 @@ const Dashboard = () => {
                 display: "flex",
                 justifyContent: "space-around",
                 alignItems: "center",
+                borderRight: "2px solid black",
               }}
             >
               <div>
@@ -155,6 +156,28 @@ const Dashboard = () => {
                   Opening balence <span>0</span>
                 </h6>
                 <h6>View Statement</h6>
+              </div>
+            </Col>
+          </Row>
+          <hr />
+          <Row>
+            <Col md={12}>
+              <div
+                style={{
+                  textAlign: "center",
+                  marginTop: "4vw",
+                }}
+              >
+                <img
+                  className="logo-img"
+                  src="../images/holdings.svg"
+                  alt="holdings logo"
+                />
+                <p>
+                  You don't have any stocks in your DEMAT yet. Get started with
+                  absolutely free equity investments.
+                </p>
+                <Button>Start Investing</Button>
               </div>
             </Col>
           </Row>
