@@ -99,6 +99,7 @@ const Dashboard = () => {
       </Row>
       <Row>
         <Col md={3}>hi</Col>
+
         <Col
           md={9}
           style={{
@@ -108,6 +109,16 @@ const Dashboard = () => {
         >
           <h1>Hi, Arvinder</h1>
           <hr />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              marginBottom: "2vw",
+            }}
+          >
+            <h3 style={{ marginLeft: "-18vw" }}>Equity</h3>
+            <h3 style={{ marginLeft: "-3vw" }}>Commodity</h3>
+          </div>
           <Row>
             <Col md={3}>
               <h1>0</h1>
