@@ -5,6 +5,12 @@ import { useState } from "react";
 const AccountOpenSection = () => {
     const [a, b] = useState("");
     const [c, d] = useState("");
+    const [aadhar, setaadhar] = useState("");
+    const [date, setdate] = useState("");
+    const [firstname, setfirstname] = useState("");
+    const [lastname, setlastname] = useState("");
+    const [pan, setpan] = useState("");
+    const [email, setemail] = useState("");
     const [isVari, setisVeri] = useState(true);
     const [isVari1, setisVeri1] = useState(false);
     const [is, isset] = useState(false);
@@ -39,12 +45,39 @@ const AccountOpenSection = () => {
     const handleSubmit4 = () => {
         setfinal(false);
         setnote(true);
+        const apple = {
+            aadhar,
+            date,
+            firstname,
+            lastname,
+            pan,
+            email,
+        };
+        console.log(apple);
     };
     const inputNumber = (event) => {
         b(event.target.value);
     };
     const inputNumber1 = (event) => {
         d(event.target.value);
+    };
+    const pannumber = (event) => {
+        setpan(event.target.value);
+    };
+    const firstName = (event) => {
+        setfirstname(event.target.value);
+    };
+    const lastName = (event) => {
+        setlastname(event.target.value);
+    };
+    const emaiL = (event) => {
+        setemail(event.target.value);
+    };
+    const aadharnumber = (event) => {
+        setaadhar(event.target.value);
+    };
+    const datE = (event) => {
+        setdate(event.target.value);
     };
     return (
         <div>
@@ -137,11 +170,11 @@ const AccountOpenSection = () => {
                                     >
                                         continue
                                     </button>
-                                    <p className="text-12 mt-2 mb-3">
+                                    {/* <p className="text-12 mt-2 mb-3">
                                         <a href="/">
                                             Want to open an NRI account?
                                         </a>
-                                    </p>
+                                    </p> */}
                                 </form>
                             </Col>
                         )}
@@ -152,8 +185,8 @@ const AccountOpenSection = () => {
                                     <div className="input-group mb-3 ">
                                         <input
                                             type="tel"
-                                            value={c}
-                                            onChange={inputNumber1}
+                                            value={pan}
+                                            onChange={pannumber}
                                             className="form-control "
                                             required
                                         />
@@ -162,6 +195,9 @@ const AccountOpenSection = () => {
                                     <input
                                         className="form-control  mb-3"
                                         type="date"
+                                        onChange={datE}
+                                        value={date}
+                                        required
                                     />
 
                                     <button
@@ -184,9 +220,9 @@ const AccountOpenSection = () => {
                                     <span className="m-0">Aadhar number</span>
                                     <div className="input-group mb-3 ">
                                         <input
-                                            type="tel"
-                                            // value={}
-                                            onChange={inputNumber1}
+                                            type="number"
+                                            value={aadhar}
+                                            onChange={aadharnumber}
                                             className="form-control "
                                             required
                                         />
@@ -195,16 +231,25 @@ const AccountOpenSection = () => {
                                     <input
                                         className="form-control  mb-3"
                                         type="text"
+                                        onChange={firstName}
+                                        required
+                                        value={firstname}
                                     />
                                     <span className="m-0 ">Last name</span>
                                     <input
                                         className="form-control  mb-3"
+                                        value={lastname}
+                                        onChange={lastName}
+                                        required
                                         type="text"
                                     />
                                     <span className="m-0 ">Email</span>
                                     <input
                                         className="form-control  mb-3"
                                         type="mail"
+                                        onChange={emaiL}
+                                        required
+                                        value={email}
                                     />
                                     <button
                                         type="submit"
