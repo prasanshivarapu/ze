@@ -11,28 +11,26 @@ import Support from "./components/Support/Support";
 import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
-    return (
-        <Router>
-            <div>
-                <NavbarComp />
-                <Routes>
-                    <Route path="/" element={<Homepage />} />
+  return (
+    <Router>
+      <div>
+        {/* <NavbarComp /> */}
+        <Routes>
+          <Route path="/" element={<Homepage />} />
 
-                    <Route path="/signup" element={<AccountOpenSection />} />
-                    {/*  <Route path="/about" element={<About />} />
           <Route path="/signup" element={<AccountOpenSection />} />
-          {/* <Route path="/about" element={<About />} />
+          {/*  <Route path="/about" element={<About />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/product" element={<Product />} />
                     <Route path="/1" element={<Support />} />
                     <Route path="/2" element={<Investiment />} />  */}
-                    {/* <Route path="/3" element={<Dashboard />} /> */}
-                    <Route path="/dashboard" element={<Dashboard />} />
-                </Routes>
-                {/* <Footer /> */}
-            </div>
-        </Router>
-    );
+          {/* <Route path="/3" element={<Dashboard />} /> */}
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+        {/* <Footer /> */}
+      </div>
+    </Router>
+  );
 }
 
 export default App;
