@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "./footer.css"
+import "./footer.css";
 function Footer() {
     return (
-        <footer id="footer">
+        <footer>
             <Container>
                 <Row className="main-footer">
                     <Col md={3}>
@@ -88,15 +88,13 @@ function Footer() {
                                 <a href="contact/index.html">Contact us</a>
                             </li>
                             <li>
-                                <a href="/support.zerodha.com">
-                                    Support portal
-                                </a>
+                                <a href="/">Support portal</a>
                             </li>
                             <li>
-                                <a href="z-connect.html">Z-Connect blog</a>
+                                <a href="/">Z-Connect blog</a>
                             </li>
                             <li>
-                                <a href="charges/index.html">List of charges</a>
+                                <a href="/">List of charges</a>
                             </li>
                             <li>
                                 <a href="/">Downloads &amp; resources</a>
@@ -110,14 +108,10 @@ function Footer() {
                         <ul className="list-style">
                             <li className="nav-head">Account</li>
                             <li>
-                                <a href="open-account/index.html">
-                                    Open an account
-                                </a>
+                                <a href="/">Open an account</a>
                             </li>
                             <li>
-                                <a href="fund-transfer/index.html">
-                                    Fund transfer
-                                </a>
+                                <a href="/">Fund transfer</a>
                             </li>
                         </ul>
                     </Col>
