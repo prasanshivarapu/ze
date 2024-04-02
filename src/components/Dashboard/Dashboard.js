@@ -1,187 +1,267 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Navbar,
-  Nav,
-  Card,
-} from "react-bootstrap";
+import { Button, Card, Col, Container, Navbar, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { TbArrowBigLeftFilled } from "react-icons/tb";
-import { IoIosNotificationsOutline } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { RxAvatar } from "react-icons/rx";
 import "./dashboard.css";
+import useWindowSize from "../../coustomHook/useWindowSize";
 
 const Dashboard = () => {
+  const size = useWindowSize();
   return (
     <Container fluid>
       <Row>
-        <Navbar
-          sticky="top"
-          collapseOnSelect
-          bg="light"
-          expand="lg"
-          className="bg-body-tertiary "
-          style={{ border: "1px solid black" }}
-        >
-          <Col md={3} style={{ borderRight: "1px solid black" }}>
-            <Container
-              fluid
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-              }}
-            >
-              <Nav className="nam">
-                <Nav.Link
-                  className="nav-links "
-                  href="/dashboard"
-                  style={{ fontSize: "1vw" }}
-                >
-                  NIFTY 50 <span style={{ color: "orange" }}>21983.08</span>
-                </Nav.Link>
-                <Nav.Link
-                  className="nav-links "
-                  href="/dashboard"
-                  style={{ fontSize: "1vw" }}
-                >
-                  NIFTY 50 <span style={{ color: "orange" }}>21983.08</span>
-                </Nav.Link>
-              </Nav>
-            </Container>
-          </Col>
-          <Col md={9}>
-            <Container
-              fluid
-              style={{
-                margin: "0.5vw 5vw",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <Navbar.Brand className="nav-links " href="/">
-                <TbArrowBigLeftFilled />
-              </Navbar.Brand>
-
-              <Nav className="nam">
-                <Nav.Link className="nav-links " href="/dashboard">
-                  Dashboard
-                </Nav.Link>
-                <Nav.Link className="nav-links " href="/orders">
-                  Orders
-                </Nav.Link>
-                <Nav.Link className="nav-links " href="/holdings">
-                  Holdings
-                </Nav.Link>
-                <Nav.Link className="nav-links " href="/positions">
-                  Positions
-                </Nav.Link>
-                <Nav.Link className="nav-links " href="/bids">
-                  Bids
-                </Nav.Link>
-                <Nav.Link className="nav-links " href="/funds">
-                  Funds
-                </Nav.Link>
-                <Nav.Link className="nav-links " href="/funds">
-                  <IoIosNotificationsOutline />
-                </Nav.Link>
-                <Nav.Link className="nav-links " href="/funds">
-                  <CgProfile />
-                </Nav.Link>
-                <Nav.Link className="nav-links " href="/profile">
-                  L73214
-                </Nav.Link>
-              </Nav>
-            </Container>
-          </Col>
-        </Navbar>
+        {size.width < 600 ? (
+          <>
+            {/* <Col md={12} className="card">
+              <Card style={{ border: "none" }}>
+                <div className="card_item">
+                  <div className="card_item_1">
+                    <Link className="links ">
+                      <TbArrowBigLeftFilled className="react_icons " />
+                    </Link>
+                  </div>
+                  <div className="card_item_2">
+                    <Link className="links" to="/dashboard">
+                      Dashboard
+                    </Link>
+                    <Link className="links" to="/orders">
+                      Orders
+                    </Link>
+                    <Link className="links" to="/holdings">
+                      Holdings
+                    </Link>
+                    <Link className="links" to="/positions">
+                      Positions
+                    </Link>
+                    <Link className="links" to="/bids">
+                      Bids
+                    </Link>
+                    <Link className="links" to="/funds">
+                      Funds
+                    </Link>
+                    <Link className="links" to="/notification">
+                      <IoMdNotificationsOutline className="react_icons" />
+                    </Link>
+                    <Link className="links" to="/profile">
+                      <RxAvatar className="react_icons" />
+                    </Link>
+                    <Link className="links" to="/profile">
+                      Ltj473
+                    </Link>
+                  </div>
+                </div>
+              </Card>
+            </Col> */}
+          </>
+        ) : (
+          <>
+            <Col md={3} className="card">
+              <Card style={{ border: "none" }}>
+                <h1>hello1</h1>
+              </Card>
+            </Col>
+            <Col md={9} className="card">
+              <Card style={{ border: "none" }}>
+                <div className="card_item">
+                  <div className="card_item_1">
+                    <Link className="links ">
+                      <TbArrowBigLeftFilled className="react_icons " />
+                    </Link>
+                  </div>
+                  <div className="card_item_2">
+                    <Link className="links" to="/dashboard">
+                      Dashboard
+                    </Link>
+                    <Link className="links" to="/orders">
+                      Orders
+                    </Link>
+                    <Link className="links" to="/holdings">
+                      Holdings
+                    </Link>
+                    <Link className="links" to="/positions">
+                      Positions
+                    </Link>
+                    <Link className="links" to="/bids">
+                      Bids
+                    </Link>
+                    <Link className="links" to="/funds">
+                      Funds
+                    </Link>
+                    <Link className="links" to="/notification">
+                      <IoMdNotificationsOutline className="react_icons" />
+                    </Link>
+                    <Link className="links" to="/profile">
+                      <RxAvatar className="react_icons" />
+                    </Link>
+                    <Link className="links" to="/profile">
+                      Ltj473
+                    </Link>
+                  </div>
+                </div>
+              </Card>
+            </Col>
+          </>
+        )}
       </Row>
+      {/* // part 2 // */}
       <Row>
-        <Col md={3}>hi</Col>
+        {size.width < 600 ? (
+          <>
+            <Col md={12} className="card">
+              <Card style={{ border: "none", height: "90vh" }}>
+                <div className="card_name">Hi, Arvind</div>
+                <hr />
 
-        <Col
-          md={9}
-          style={{
-            borderLeft: "1px solid black",
-            height: "100vh",
-          }}
-        >
-          <h1>Hi, Arvinder</h1>
-          <hr />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              marginBottom: "2vw",
-            }}
-          >
-            <h3 style={{ marginLeft: "-18vw" }}>Equity</h3>
-            <h3 style={{ marginLeft: "-3vw" }}>Commodity</h3>
-          </div>
-          <Row>
-            <Col md={3} style={{ borderRight: "2px solid black" }}>
-              <h1>0</h1>
-              <h5>Margin availbel</h5>
+                <div className="design">
+                  <div className="design_inner">
+                    <div>Equity</div>
+                    <div>
+                      <Row>
+                        <Col md={6}>
+                          <div className="design_matter">
+                            <h1>0</h1>
+                            <p>margin available</p>
+                          </div>
+                        </Col>
+                        <Col md={6}>
+                          <div>
+                            <p>
+                              Margin used <span>0</span>
+                            </p>
+                            <p>
+                              Opening balence <span>0</span>
+                            </p>
+                            <Link className="links_on_matter">
+                              View Statement
+                            </Link>
+                          </div>
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                  <div className="design_inner">
+                    <div>Commodity</div>
+                    <div>
+                      <Row>
+                        <Col md={6}>
+                          <div className="design_matter">
+                            <h1>0</h1>
+                            <p>margin available</p>
+                          </div>
+                        </Col>
+                        <Col md={6}>
+                          <div>
+                            <p>
+                              Margin used <span>0</span>
+                            </p>
+                            <p>
+                              Opening balence <span>0</span>
+                            </p>
+                            <Link className="links_on_matter">
+                              View Statement
+                            </Link>
+                          </div>
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div className="text">
+                  <img src="" alt="" /> <br />
+                  <p className="paragrap">
+                    You dont have any stock's your DEMAT yet. Get Started With
+                    absolutely free equity investment
+                  </p>
+                  <br />
+                  <Button>Start Investing</Button>
+                </div>
+              </Card>
             </Col>
-            <Col
-              md={6}
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-                alignItems: "center",
-                borderRight: "2px solid black",
-              }}
-            >
-              <div>
-                <h6>
-                  Margin used <span>0</span>
-                </h6>
-                <h6>
-                  Opening balence <span>0</span>
-                </h6>
-                <h6>View Statement</h6>
-              </div>
-              <div>
-                <h1>0</h1>
-                <h5>Margin availbel</h5>
-              </div>
+          </>
+        ) : (
+          <>
+            {" "}
+            <Col md={3} className="card">
+              <Card style={{ border: "none" }}>
+                <h1>hello2</h1>
+              </Card>
             </Col>
-            <Col md={3}>
-              <div>
-                <h6>
-                  Margin used <span>0</span>
-                </h6>
-                <h6>
-                  Opening balence <span>0</span>
-                </h6>
-                <h6>View Statement</h6>
-              </div>
+            <Col md={9} className="card">
+              <Card style={{ border: "none", height: "90vh" }}>
+                <div className="card_name">Hi, Arvind</div>
+                <hr />
+
+                <div className="design">
+                  <div className="design_inner">
+                    <div>Equity</div>
+                    <div>
+                      <Row>
+                        <Col md={6}>
+                          <div className="design_matter">
+                            <h1>0</h1>
+                            <p>margin available</p>
+                          </div>
+                        </Col>
+                        <Col md={6}>
+                          <div>
+                            <p>
+                              Margin used <span>0</span>
+                            </p>
+                            <p>
+                              Opening balence <span>0</span>
+                            </p>
+                            <Link className="links_on_matter">
+                              View Statement
+                            </Link>
+                          </div>
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                  <div className="design_inner">
+                    <div>Commodity</div>
+                    <div>
+                      <Row>
+                        <Col md={6}>
+                          <div className="design_matter">
+                            <h1>0</h1>
+                            <p>margin available</p>
+                          </div>
+                        </Col>
+                        <Col md={6}>
+                          <div>
+                            <p>
+                              Margin used <span>0</span>
+                            </p>
+                            <p>
+                              Opening balence <span>0</span>
+                            </p>
+                            <Link className="links_on_matter">
+                              View Statement
+                            </Link>
+                          </div>
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div className="text">
+                  <img src="" alt="" /> <br />
+                  <p className="paragrap">
+                    You dont have any stock's your DEMAT yet. Get Started With
+                    absolutely free equity investment
+                  </p>
+                  <br />
+                  <Button>Start Investing</Button>
+                </div>
+              </Card>
             </Col>
-          </Row>
-          <hr />
-          <Row>
-            <Col md={12}>
-              <div
-                style={{
-                  textAlign: "center",
-                  marginTop: "4vw",
-                }}
-              >
-                <img
-                  className="logo-img"
-                  src="../images/holdings.svg"
-                  alt="holdings logo"
-                />
-                <p>
-                  You don't have any stocks in your DEMAT yet. Get started with
-                  absolutely free equity investments.
-                </p>
-                <Button>Start Investing</Button>
-              </div>
-            </Col>
-          </Row>
-        </Col>
+          </>
+        )}
       </Row>
     </Container>
   );
