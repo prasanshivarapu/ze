@@ -59,7 +59,22 @@ const Dashboard = () => {
           <>
             <Col md={3} className="card">
               <Card style={{ border: "none" }}>
-                <h1>hello1</h1>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-around",
+                    alignItems: "center",
+                  }}
+                >
+                  <p className="notification_card">
+                    NIFTY <span className="card_span">21988.30</span>{" "}
+                    <span className="card_span1">-23.65 -0.11% </span>{" "}
+                  </p>
+                  <p className="notification_card">
+                    SENSEX <span className="card_span">72532.70</span>{" "}
+                    <span className="card_span1">-108.49 -0.15% </span>{" "}
+                  </p>
+                </div>
               </Card>
             </Col>
             <Col md={9} className="card">
